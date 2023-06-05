@@ -65,7 +65,7 @@ public class Main {
         }
 
         var average = sum / days;
-        System.out.println("Средняя сумма трат за месяц составила" + average + "рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
     }
 
     public static void task4() {
