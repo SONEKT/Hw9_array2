@@ -24,13 +24,13 @@ public class Main {
 
         int[] arr = generateRandomArray();
 
-        var sum = 0;
+        var budget = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+            budget += arr[i];
         }
 
-        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        System.out.println("Сумма трат за месяц составила " + budget + " рублей");
     }
 
     public static void task2() {
@@ -42,10 +42,12 @@ public class Main {
         var min = Integer.MAX_VALUE;
 
         for (int i = 0; i < arr.length; i++) {
-            if (max < arr[i])
+            if (max < arr[i]) {
                 max = arr[i];
-            if (min > arr[i])
+            }
+            if (min > arr[i]) {
                 min = arr[i];
+            }
         }
 
         System.out.println("Минимальная сумма трат за день составила " + min + "  рублей. Максимальная сумма трат за день составила " + max + "рублей");
@@ -57,14 +59,12 @@ public class Main {
         int[] arr = generateRandomArray();
 
         var sum = 0.;
-        var days = 0.;
 
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            days++;
         }
 
-        var average = sum / days;
+        var average = sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
     }
 
@@ -73,7 +73,7 @@ public class Main {
 
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
-        for (int i = reverseFullName.length-1; i >= 0; i--) {
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
     }
